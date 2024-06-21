@@ -22,5 +22,5 @@ def formInfo(request):
     thal=int(request.GET["thal"])
     
 
-    kk=model.predict([[Age,Sex,chest_pain,bp,choresterol,fbp,electrograph,max,angina,oldpeak,slope,vessels,thal]])
+    kk=model.predict([[Age,sex,chest_pain,bp,choresterol,fbp,electrograph,max,angina,oldpeak,slope,vessels,thal]])
     return render(request,"result.html",{"result":kk})
