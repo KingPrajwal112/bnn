@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from joblib import load
-import pickle
+
 
 model=load("./SaveModels/model12")
 def predictor(request):
