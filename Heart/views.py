@@ -2,7 +2,7 @@ from django.shortcuts import render
 from joblib import load
 import pickle
 
-model=pickle.load(open('/SaveModels/ee','rb'))
+model=load("./SaveModels/model12")
 def predictor(request):
     return render(request,"index.html")
 
