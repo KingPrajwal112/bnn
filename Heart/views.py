@@ -9,8 +9,8 @@ def predictor(request):
 def formInfo(request):
     Age=int(request.GET["age"])
     Sex=int(request.GET["sex"])
-    chest_pain=int(request.GET["chest_pain"])
-    bp=int(request.GET["bp"])
+    Chest_pain=int(request.GET["chest_pain"])
+    Bp=int(request.GET["bp"])
     choresterol=int(request.GET["choresterol"])
     fbp=int(request.GET["fbp"])
     electrograph=int(request.GET["electrograph"])
