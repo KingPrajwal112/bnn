@@ -23,4 +23,5 @@ def formInfo(request):
     
 
     kk=model.predict([[Age,Sex,Chest_pain,Bp,Choresterol,Fbp,Electrograph,Max,Angina,Oldpeak,Slope,Vessels,Thal]])
-    return render(request,"result.html",{"result":kk})
+    kk_str = ', '.join(map(str, kk))
+    return render(request,"result.html",{"result":kk_str})
